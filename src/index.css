@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", Georgia, serif;
+  --color-brand-green: #017B1D;
+  --color-brand-green-hover: #016216;
+  --color-brand-light: #F4FBF5;
+  --color-brand-accent: #D4AF37;
+  --color-brand-accent-hover: #B8962D;
+}
+
+/* Base custom interactive styles */
+body {
+  background-color: #FAFAFA;
+  color: #171717;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for sleek UI feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(1, 123, 29, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(1, 123, 29, 0.5);
+}
+
+/* Calligraphy Ink Texturing Overlay */
+.calligraphy-bg-pattern {
+  background-image: radial-gradient(rgba(1, 123, 29, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Animated subtle glow */
+@keyframes softPulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.glow-btn {
+  box-shadow: 0 0 15px rgba(1, 123, 29, 0.25);
+}
+
+/* Print Styles for clean PDF Generation */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  #main-navigation {
+    display: none !important;
+  }
+  body, #baitkhat-applet-root {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #printable-copydeck-content {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Bait Khat",
+  "description": "Akademi Seni Kaligrafi Arab (Khat) terbaik dengan program kelas offline, online, galeri karya, prestasi siswa, dan platform pendaftaran.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
